@@ -3,8 +3,7 @@
     "name": "Mobile url to PC url",
     "version": "1.0.0",
     "description": "mobile 링크를 PC용 링크로 자동변환 해주는 확장프로그램입니다",
-    "icons": {
-        "48": "images/icon-48.png",
-        "128": "images/icon-128.png"
+    "action": {
+        "default_popup": "hello.html"
     }
 }
