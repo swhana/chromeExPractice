@@ -4,16 +4,17 @@
     "version": "1.0.0",
     "description": "mobile 링크를 PC용 링크로 자동변환 해주는 확장프로그램입니다",
     "icons": {},
-    "action": {
-        "default_popup": "hello.html"
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
     },
-    "content_scripts": [
-        {
-            "js": ["scripts/content.js"],
-            "matches": [
-                "https://developer.chrome.com/docs/extensions/*",
-                "https://developer.chrome.com/docs/webstore/*"
-            ]
+    "permissions": ["scripting", "activeTab"],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+B",
+                "mac": "Command+B"
+            }
         }
-    ]
+    }
 }
